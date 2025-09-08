@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar membuat Tabel, Form, dan Frame</title>
+</head>
+<body>
+<table border="1" bgcolor="white" align="center">
+<caption align="top">
+<b><h2> Tabel Daftar Nilai Mahasiswa </h2></b> </caption>
+<tr bgcolor="yellow"><th rowspan="2">No</th>
+<th rowspan="2">NPM</th> <th rowspan="2">Nama</th> <th colspan="2">Nilai</th>
+</tr>
+<tr bgcolor="red"><th>UTS</th><th>UAS</th></tr>
+<tr bgcolor="cyan"><td align="center" width="20">1 .</td>
+<td align="left" valign="middle" width="8o" height="40">06.100.001</td>
+<td align="left" valign="middle" width="180" height="40">Amin A. Angkasa</td>
+<td align="center" valign="middle">70</td> <td align="center" valign="middle">8o</td>
+</tr>
+<tr bgcolor="cyan"><td width="20">2 .</td>
+<td align="left" valign="middle" width="8o" height="40">06.100.002</td>
+<td align="left" valign="middle" width="180" height="40">Beni B. Bernardi</td>
+<td align="center" valign="middle">70</td> <td align="center" valign="middle">8o</td>
+</tr>
+</table>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Registration Form</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <br><label for="first">First Name:</label></br>
+            <input type="text" id="first" name="first" required />
+
+            <br><label for="last">Last Name:</label></br>
+            <input type="text" id="last" name="last" required />
+
+            <br><label for="email">Email:</label></br>
+            <input type="email" id="email" name="email" required />
+
+            <br><label for="password">Password:</label></br>
+            <input type="password" id="password" name="password"
+                   pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                   title="Password must contain at least one number, 
+                           one alphabet, one symbol, and be at 
+                           least 8 characters long" required />
+
+            <br><label for="repassword">Re-type Password:</label></br>
+            <input type="password" id="repassword" name="repassword" required />
+
+            <br><label for="mobile">Contact:</label></br>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+            <br><label for="gender">Gender:</label></br>
+            <select id="gender" name="gender" required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</body>
+</html>
